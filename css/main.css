@@ -1,0 +1,279 @@
+
+/*
+* ==================================================
+* 01. Basic
+* ==================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+hr {
+    display: block;
+    height: 1;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/*
+* ==================================================
+* 02. Header Section
+* ==================================================
+*/
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    display: table;
+}
+
+.logo span {
+    display: inline-block;
+    font-size: 2em;
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    text-transform: uppercase;
+    color: #737373;
+    font-weight: 600;
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: none;
+}
+
+ul.social-icons {
+    width: 80%;
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    padding: 9px 0;
+}
+
+ul.social-icons li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.social-icons li a {
+    display: block;
+    text-decoration: none;
+}
+
+.cursor {
+    position: absolute;
+    top: 22px;
+    left: 12px;
+}
+
+/*
+* ==================================================
+* 03. Navigation
+* ==================================================
+*/
+
+nav ul {
+    padding: 20px 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #737373;
+    padding: 15px 15px 15px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+nav ul li + li a {
+    padding: 15px 15px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #41D386;
+}
+
+
+/*
+* ==================================================
+* 04. Banner
+* ==================================================
+*/
+
+.banner {
+    width: 100%;
+    min-height: 45vh;
+    position: relative;
+    background-image: url(../images/slider_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-image {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20px);
+    transform: translate(-50%, 10%);
+}
+
+.banner-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.banner-content {
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content p {
+    margin-bottom: 25px;
+    font-size: .9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+.button1,
+.button2 {
+    border: none;
+    text-transform: uppercase;
+    background-color: #2DCC70;
+    width: 40%;
+    padding: 15px;
+}
+
+.button2 {
+    width: 20%;
+}
+
+.button1 a,
+.button2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+* ==================================================
+* 05. Blown
+* ==================================================
+*/
+
+.blown {
+    padding: 50px;
+    background-color: #332F30;
+}
+
+.blown p {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    color: #EDEEEE;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.blown button {
+    display: inline-block;
+    text-align: right;
+}
+
+/*
+* ==================================================
+* 06. footer
+* ==================================================
+*/
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer p {
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+    color: #ABABAB;
+    font-size: .9em;
+    font-weight: 600;
+
+}
+
+ul.footer-nav {
+    width: 50%;
+    list-style-type: none;
+    float: left;
+    text-align: right;
+}
+
+ul.footer-nav li {
+    display: inline-block;
+}
+
+ul.footer-nav li + li:before {
+    padding: 8px;
+    color: #999;
+    content: "/\00a0";
+}
+
+ul.footer-nav li a {
+    font-size: .9em;
+    font-weight: 600;
+    color: #ABABAB;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.footer-nav li a:hover,
+ul.footer-nav li a:focus {
+    color: #41D386;
+}
